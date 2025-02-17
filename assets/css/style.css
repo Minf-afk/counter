@@ -3,7 +3,7 @@ html,body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: beige;
+  background-color: gray;
   height: 85%;
   margin:0 ;
 }
@@ -36,7 +36,9 @@ h1 {
 }
 .btn1:hover {
   cursor: pointer;
+  color: aliceblue;
   border-color: blue;
+  background-color: black;
 }
 .btn2 {
   border-radius: 1rem;
@@ -45,7 +47,9 @@ h1 {
 }
 .btn2:hover {
   cursor: pointer;
+  color: aliceblue;
   border-color: blue;
+  background-color: black;
 }
 .btn3 {
   border-radius: 1rem;
@@ -53,6 +57,7 @@ h1 {
   font-family: Arial, Helvetica, sans-serif;
 }
 .btn3:hover {
-  cursor: pointer;
+  color: aliceblue;
   border-color: blue;
+  background-color: black;
 }

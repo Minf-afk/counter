@@ -5,14 +5,26 @@ const number = document.querySelector(".number")
 
 btn1.addEventListener('click', function () {
     let currentNumber = parseInt(number.textContent);
-    number.textContent = currentNumber - 1;
+    currentNumber --;
+    number.textContent = currentNumber
+    if (currentNumber < 0) {
+        number.style.color = "red";
+    } else if (currentNumber === 0) {
+        number.style.color = "black";
+    }
 });
 
 btn2.addEventListener('click', function () {
     number.textContent = 0;
+    number.style.color = "black";
 });
 
 btn3.addEventListener('click', function () {
     let currentNumber = parseInt(number.textContent);
-    number.textContent = currentNumber + 1;
+    currentNumber ++;
+    number.textContent = currentNumber
+    if(currentNumber > 0){
+        number.style.color = "green"
+    }else if( currentNumber === 0)
+        number.style.color = "black";
 });
